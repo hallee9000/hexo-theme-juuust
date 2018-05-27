@@ -1,7 +1,7 @@
 <%
   let currentHeroes = {}
   const heroes = site.data.heroes
-  if(isHome){
+  if(isHome && heroes){
     let heroList = []
     const home = config.home ? config.home : theme.home
     Object.keys(heroes).map(function(key){
@@ -12,10 +12,10 @@
       posts: heroList.slice(0,3)
     }
   }else{
-    currentHeroes = site.data.heroes
+    currentHeroes = heroes
   }
 %>
-<% if(currentHeroes){ %>
+<% if(heroes){ %>
   <div class="container container-works">
     <% for (let section in currentHeroes) { %>
       <h1 class="section-title">
@@ -40,5 +40,12 @@
         <% }); %>
       </ul>
     <% } %>
+  </div>
+<% } else if(!isHome) { %>
+  <div class="container container-works">
+    <div class="space-xxlg"></div>
+    <p class="text-center">这里，空空如也...</p>
+    <div class="space-sm"></div>
+    <div class="space-xxlg"></div>
   </div>
 <% } %>
