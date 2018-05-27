@@ -1,0 +1,24 @@
+<%
+  var current, total;
+  if(page.layout==='page'){
+    current = 1;
+    total = Math.ceil(site.posts.length/9);
+  }
+%>
+<% if(page.layout==='page' || page.prev || page.next){ %>
+  <div class="pagination-widgets text-center">
+    <nav class="container">
+      <%-
+        paginator({
+          base: 'page',
+          format: '/%d/',
+          current: current,
+          total: total,
+          prev_text: '<img src="/images/arrow-left.svg"/>',
+          next_text: '<img src="/images/arrow-right.svg"/>',
+          mid_size: 1
+        })
+      %>
+    </nav>
+  </div>
+<% } %>

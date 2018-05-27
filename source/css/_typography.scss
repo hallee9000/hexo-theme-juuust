@@ -1,0 +1,48 @@
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Contextual colors
+.text-muted {
+  color: $text-muted;
+}
+
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.flex-box{
+  display: flex;
+}
+.flex-v-center{
+  align-items: center;
+}
+$height-base: 10px;
+$size-list: xxs, xs, sm, md, lg, xlg, xxlg;
+@each $size in $size-list{
+	.space-#{$size}{
+		height: $height-base;
+	}
+	$height-base: $height-base + 10px
+}
+
+.shadowed{
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}

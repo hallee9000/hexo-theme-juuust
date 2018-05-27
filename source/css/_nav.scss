@@ -1,0 +1,42 @@
+.site-header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #EEE;
+  overflow: hidden;
+  background: #FFF;
+  z-index: 1;
+  transition: transform 0.4s;
+  &.header-hidden{
+    transform: translateY(-70px);
+  }
+  >nav{
+    height: 70px;
+    padding: 15px;
+    .header-logo{
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius:20px;
+      border: 1px solid #EEE;
+      overflow: hidden;
+      &:hover{
+        background: #333;
+      }
+    }
+    .header-link{
+      padding-left: 15px;
+      color: #999;
+      font-size: 15px;
+      line-height: 40px;
+      &.active{
+        color: #333;
+      }
+      &:hover{
+        color: #333;
+      }
+    }
+  }
+}

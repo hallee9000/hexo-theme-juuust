@@ -1,0 +1,42 @@
+# basic
+title: Juuust
+subtitle: 好奇心大于一切
+favicon: /images/favicon.ico
+logo: /images/header-avatar.png
+
+# nav
+nav:
+  # home: .
+  about: about
+  archive: archives
+  page: page
+  works: works
+  # rss: atom.xml
+
+# home page
+home:
+  hero:
+    title: Works
+    brief: 比较自豪的一些作品
+  recent:
+    title: Recent Posts
+    brief: 最近的一些想法
+
+# about page
+about:
+  hero: /images/hero.jpg
+  hero_width: 160
+
+# Default post title
+default_post_title: Untitled
+
+# social
+social:
+  weixin: /images/weixin-qrcode.png
+  dribbble: https://dribbble.com/leadream
+  behance: https://github.com/leadream
+  zcool: https://leadream.zcool.com.cn/
+  github: https://github.com/leadream
+  mail: mailto:leadream4@gmail.com
+
+footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/leadream/hexo-theme-juuust" target="_blank">Juuust</a>

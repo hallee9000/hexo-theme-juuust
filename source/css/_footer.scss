@@ -1,0 +1,28 @@
+.footer{
+  border-top: 1px solid #F3F3F3;
+  .container{
+    padding: 30px 0;
+    .footer-qrcode{
+      margin-bottom: 20px;
+      img{
+        width: 90px;
+      }
+    }
+    .footer-social{
+      margin-bottom: 20px;
+      a{
+        padding: 5px;
+        img{
+          height: 20px;
+          opacity: 0.5;
+          transition: opacity 0.4s;
+        }
+        &:hover{
+          img{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

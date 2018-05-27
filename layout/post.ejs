@@ -1,0 +1,55 @@
+<div class="site-content post-container">
+  <div class="container container-limited">
+    <div class="space-xlg"></div>
+    <section class="container-header">
+      <h1>
+        <%- page.title || theme.default_post_title || "Untitled" %>
+      </h1>
+      <% if (page.subtitle && page.subtitle.length) { %>
+        <h2><%- page.subtitle %></h2>
+      <% } %>
+      <p><%= page.date.format(config.date_format) %></p>
+    </section>
+    <div class="space-lg"></div>
+    <% if(page.demo){ %>
+      <section class="container-line"></section>
+      <section class="container-outline">
+        <%- page.demo %>
+      </section>
+      <section class="container-line"></section>
+      <div class="space-lg"></div>
+    <% } %>
+    <section class="row container-article">
+      <div class="col-sm-12 article-content">
+        <%- page.content %>
+      </div>
+    </section>
+    <!-- Prev or Next -->
+    <div class="space-xxlg"></div>
+    <section class="row container-ending">
+      <% if (page.prev) { %>
+        <a href="<%- config.root %><%- page.prev.path %>" class="ending-nav ending-prev" title="<%- page.prev.title %>">
+          <div class="nav-icon text-center">
+            <img src="/images/arrow-left.svg">
+          </div>
+          <div class="hidden-xs">
+            <p><%- page.prev.title %></p>
+            <p><%- __('prev')%></p>
+          </div>
+        </a>
+      <% } %>
+      <% if (page.next) { %>
+        <a href="<%- config.root %><%- page.next.path %>" class="ending-nav ending-next" title="<%- page.next.title %>">
+          <div class="hidden-xs">
+            <p><%- page.next.title %></p>
+            <p><%- __('next')%></p>
+          </div>
+          <div class="nav-icon text-center">
+            <img src="/images/arrow-right.svg">
+          </div>
+        </a>
+      <% } %>
+    </section>
+    <div class="space-xxlg"></div>
+  </div>
+</div>

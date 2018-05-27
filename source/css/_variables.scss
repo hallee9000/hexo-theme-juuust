@@ -1,0 +1,57 @@
+// colors
+$color-title: #000;
+$color-text: #3a3a3a;
+$grey-border: #dcdcdc;
+
+// lenght
+$header-height: 70px;
+$nav-padding-top: 25px;
+$container-width: 600px;
+$inside-wrapper-width: 920px;
+$icon-size: 20px;
+
+// typography
+//颜色
+$primary-color:#017CF5;
+$secondary-color:#020F59;
+$text-muted: #666;
+
+$link-color : #0C6;
+$text-color : #333;
+
+$bg-color:#F2F2F2;
+
+//文字
+$font-family:  "NotoSans", "NotoSansUI", "PingFang SC", "HiraginoSansGB-W3","Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-size:14px;
+$font-weight:normal;
+
+//文本
+$line-height:1.6;
+
+// bootstrap
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;

@@ -1,0 +1,44 @@
+<%
+  let currentHeroes = {}
+  const heroes = site.data.heroes
+  if(isHome){
+    let heroList = []
+    const home = config.home ? config.home : theme.home
+    Object.keys(heroes).map(function(key){
+      heroList = heroList.concat(heroes[key].posts)
+    })
+    currentHeroes[home.hero.title] = {
+      brief: home.hero.brief,
+      posts: heroList.slice(0,3)
+    }
+  }else{
+    currentHeroes = site.data.heroes
+  }
+%>
+<% if(currentHeroes){ %>
+  <div class="container container-works">
+    <% for (let section in currentHeroes) { %>
+      <h1 class="section-title">
+        <span><%= section %></span>
+        <% if(isHome){ %>
+          <a href="/works" class="btn-more pull-right">more</a>
+        <% } %>
+      </h1>
+      <p class="section-description"><%= currentHeroes[section].brief %></p>
+      <ul class="row works-list section-list">
+        <% currentHeroes[section].posts.map(function(item, itemIndex){ %>
+          <li class="col-sm-6 col-md-4 section-item">
+            <a class="list-item" href="<%- item.link %>">
+              <div class="poster">
+                <img src="<%- item.pic %>">
+              </div>
+              <div class="desc">
+                <h4 class="title"><%= item.title %></h4>
+              </div>
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    <% } %>
+  </div>
+<% } %>

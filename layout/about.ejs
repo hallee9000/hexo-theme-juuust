@@ -1,0 +1,18 @@
+<%
+  const about = config.about ? config.about : theme.about
+  const heroWidth = about.hero_width ? (about.hero_width + 'px') : 'auto'
+%>
+<div class="site-content about">
+	<div class="container about-limited">
+    <% if(about.hero){ %>
+      <section class="about-hero">
+        <img src="<%- about.hero %>" style="width: <%- heroWidth %>">
+      </section>
+    <% } %>
+    <% if(page.content){ %>
+      <section class="about-content">
+        <%- page.content %>
+      </section>
+    <% } %>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+.about{
+  margin-bottom: 100px;
+  .about-limited{
+    max-width: 700px;
+    .about-hero{
+      padding: 30px 0;
+      text-align: center;
+      img{
+        margin: auto;
+      }
+    }
+    .about-content{
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<%
+var isFullUrl = function(str) {
+  return /^(https:|http:|ftp:)?\/\//.test(str);
+};
+%>
+
+<li class="col-sm-6 col-md-4 section-item">
+  <a class="list-item" href="<%- config.root %><%- item.path %>">
+    <div>
+      <h3 class="item-title"># <%- item.title || theme.default_post_title || "Untitled" %></h3>
+      <p class="item-desc"><%= item.date.format(config.date_format) %></p>
+    </div>
+  </a>
+</li>

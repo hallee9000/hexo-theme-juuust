@@ -1,0 +1,28 @@
+.pagination-widgets{
+  .container{
+    margin-top: 20px;
+    .page-number, .next, .prev{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      line-height: 30px;
+      border-radius: 15px;
+      color: #333;
+      background: #F3F3F3;
+      &.current{
+        color: #FFF;
+        background: #333;
+      }
+      &:not(.current):hover{
+        background: #CCC;
+      }
+    }
+    .next, .prev{
+      img{
+        height: 12px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

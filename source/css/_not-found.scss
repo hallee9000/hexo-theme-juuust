@@ -1,0 +1,22 @@
+.not-found{
+  .not-found-poster{
+    line-height: 0;
+    >img{
+      width: 120px;
+      padding: 5px;
+      border: 1px solid #EEE;
+    }
+  }
+  .not-found-quote{
+    max-width: 320px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #999;
+    &::before{
+      content: '“';
+      margin-right: 5px;
+      color: #E3E3E3;
+      font-size: 50px;
+    }
+  }
+}

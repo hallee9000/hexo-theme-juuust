@@ -1,0 +1,54 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    line-height: $line-height;
+    color: $text-color;
+    background-color: #FFF;
+}
+img{
+    max-width:100%;
+}
+a{
+    color: $primary-color;
+    text-decoration: none;
+    transition: all 0.4s;
+    &:hover{
+        color: darken($primary-color,20%);
+    }
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    -webkit-font-smoothing: antialiased;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+code{
+    color: #666;
+    background: #FEFEFE;
+    font-family: 'Roboto Mono', 'Menlo', 'Monaco', Courier, monospace !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid #ECECEC;
+}
+
+.site-content{
+	margin-top: 70px;
+}

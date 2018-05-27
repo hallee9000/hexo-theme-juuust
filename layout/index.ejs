@@ -1,0 +1,30 @@
+<%
+  const home = config.home ? config.home : theme.home
+%>
+<div class="site-content home">
+  <% if(page.current===1){ %>
+    <%- partial('_partial/works', {isHome: true}) %>
+  <% } %>
+  <!-- 最近文章 -->
+  <div class="container container-articles">
+    <% if(page.current===1){ %>
+      <div class="space-lg"></div>
+      <h1 class="section-title">
+        <span><%= home.recent.title %></span>
+        <a href="/page" class="btn-more pull-right">more</a>
+      </h1>
+      <p class="section-description"><%= home.recent.brief %></p>
+    <% }else{ %>
+      <div class="space-xxlg"></div>
+    <% } %>
+    <ul class="row articles-list section-list">
+      <% page.posts.slice(0, 6).each(function(item, itemIndex){ %>
+          <%- partial('_partial/article-index', {item: item}) %>
+      <% }); %>
+    </ul>
+  </div>
+  <% if(page.current!==1){ %>
+    <%- partial('_partial/pagination') %>
+  <% } %>
+  <div class="space-xlg"></div>
+</div>

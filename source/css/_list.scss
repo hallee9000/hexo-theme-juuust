@@ -1,0 +1,135 @@
+.section-title{
+	margin-top: 40px;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 36px;
+}
+.section-description{
+	margin: 0 auto;
+	margin-bottom: 40px;
+	color: #999;
+	text-align: left;
+}
+
+// 项目列表
+.container-works{
+	.works-list{
+		.list-item{
+			position: relative;
+			display: block;
+			border: 1px solid #F3F3F3;
+			transition: 0.4s all;
+			&:hover{
+				box-shadow: 0 0 15px #EEE;
+			}
+			.poster{
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+			.desc{
+				padding: 0 10px;
+				text-align: left;
+				p{
+					margin:0;
+				}
+				.title{
+					margin: 0;
+					padding: 10px;
+					font-weight: 400;
+					color: #333;
+				}
+			}
+		}
+		&.list-painting{
+			margin-bottom: 80px;
+		}
+	}
+	@media (max-width: 767px) {
+		.works-list{
+			margin: 0 -15px!important;
+			.col-sm-6{
+				padding: 0 15px!important;
+			}
+			.list-item{
+				margin-bottom: 20px!important;
+			}
+		}
+	}
+}
+
+// 文章列表
+.container-articles{
+	.section-title{
+		margin-top: 0;
+	}
+	.articles-list{
+		margin: 0 -20px;
+		.col-sm-6{
+			padding: 0 20px;
+		}
+		.list-item{
+			position: relative;
+			display: block;
+			padding: 15px;
+			padding-top: 36%;
+			border: 1px solid #333;
+			color: #333;
+			&:hover{
+				box-shadow: 0 0 15px #DDD;
+			}
+			>div{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				padding: 15px;
+				.item-title{
+					margin: 0;
+					font-size: 18px;
+				}
+				.item-desc{
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+// 更多按钮
+.btn-more{
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-top: 15px;
+  color: #333;
+  border-radius: 22px;
+  border: 1px solid #333;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 44px;
+  text-align: center;
+  &:hover{
+    color: #FFF;
+    background: #333;
+  }
+}
+
+// 公共样式
+.section-list{
+	margin: 0 -20px;
+	.section-item{
+		margin-bottom: 40px;
+		padding: 0 20px;
+	}
+}
+@media (max-width: 767px) {
+	.section-list{
+		margin: 0 -15px!important;
+		.section-item{
+			margin-bottom: 30px!important;
+			padding: 0 15px!important;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<%
+  var sortedPosts = site.posts.data.sort(function(a, b){
+    return a.date.unix() - b.date.unix()
+  })
+  var posts = sortedPosts.reverse().slice(0, 9)
+  // console.log(sortedPosts.map(p => p.date.format(config.date_format)))
+%>
+<div class="site-content page">
+  <div class="container container-articles">
+		<div class="space-xxlg"></div>
+    <ul class="row articles-list section-list">
+      <% posts.map(function(item, itemIndex){ %>
+        <%- partial('_partial/article-index', {item: item}) %>
+      <% }); %>
+    </ul>
+  </div>
+  <%- partial('_partial/pagination') %>
+  <div class="space-xlg"></div>
+</div>
