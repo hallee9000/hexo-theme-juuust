@@ -6,7 +6,8 @@
 ![Juuust](./screenshot.png)
 
 ## DEMO
-[Juuust](http://juuust.com)
+demo：[leadream.github.io](https://leadream.github.io)
+我的博客：[Juuust](http://juuust.com)（做了一些定制）
 
 ## 使用
 1. 在你的 hexo 博客根目录执行如下命令:
