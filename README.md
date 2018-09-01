@@ -7,10 +7,12 @@
 
 ## DEMO
 demo：[leadream.github.io](https://leadream.github.io)
+
 我的博客：[Juuust](http://juuust.com)（做了一些定制）
 
 ## 博客源码示例
-完整博客示例：https://coding.net/u/leadream/p/hexo-theme-juuust/git（clone 下来源码直接可用）
+下面的代码仓库是一个使用了该主题的真实博客代码， clone 下来直接可用
+完整博客示例：https://coding.net/u/leadream/p/hexo-theme-juuust/git
 
 ## 使用
 1. 在你的 hexo 博客根目录执行如下命令:
